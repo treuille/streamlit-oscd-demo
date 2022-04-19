@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+streamlit = "*"
+# opencv-python-headless = ">=4.5"
+# setuptools = "*"
+
+[dev-packages]
+black = "*"
+pynvim = "*"
+
+[pipenv]
+allow_prereleases = true
+
+[requires]
+python_version = "3.8"
