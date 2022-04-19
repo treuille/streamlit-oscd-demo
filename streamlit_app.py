@@ -1,15 +1,8 @@
 """A demo app for OSDC"""
 
-# This is the famous first line of any Streamlit program.
 import streamlit as st
-import pandas as pd
-import numpy as np
 
-st.write("Hello, world!!")
+num_hellos = st.slider("How many hellos?", min_value=1, max_value=10)
 
-# Path to the Streamlit public S3 bucket
-# DATA_URL_ROOT = "https://streamlit-self-driving.s3-us-west-2.amazonaws.com/"
-
-
-# metadata= load_metadata(DATA_URL_ROOT + "labels.csv.gz")
-
+for i in range(num_hellos):
+    st.write(i, "Hello, ODSC!!")
